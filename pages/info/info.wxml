@@ -1,0 +1,11 @@
+<!--info.wxml 数组渲染-->
+<view class="container">
+ <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="preview" data-img="{{userInfo.avatarUrl}}"></image>
+ <p class="des">点击头像可以预览</p>
+  <block wx:for="{{info}}" wx:for-item="info" wx:key="*this">
+    <div class="info-item">
+     <icon type="success" size="14" class="icon"/>
+    {{info.key}}: {{info.value}}
+    </div>
+  </block>
+</view>

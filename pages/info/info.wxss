@@ -1,0 +1,27 @@
+.container{
+    padding:10px 30px;
+}
+.info-item{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-top:10px;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  display: block;
+  margin:20px auto;
+  border-radius: 50%;
+
+}
+.icon{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.des{
+    text-align: center;
+    display: block;
+    margin-bottom:20px;
+    font-size:15px;
+}

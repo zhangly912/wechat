@@ -1,0 +1,20 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+   
+    <div class="box">
+      <p>{{userInfo.province}}</p> --
+      <p>{{userInfo.city}}</p> --
+      <p wx:if="{{userInfo.gender == 2}}">女</p> 
+      <p wx:else>男</p> 
+    </div>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <text class="des">{{describle}}</text>
+  <text class="link" bindtap="goInfoTap">详细个人信息请点击查看</text>
+</view>
